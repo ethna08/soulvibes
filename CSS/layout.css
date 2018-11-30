@@ -1,0 +1,70 @@
+/*  LAYOUT  */
+
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url(../Fonts/);
+    font-weight: bold;
+    font-style: normal;
+}
+
+html, body {
+  
+  width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ffffff;
+  color: #2a333c;
+  
+}
+
+html {
+  
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  
+}
+
+.container {
+  margin: 0 auto;
+  
+}
+
+.clearfix::before, 
+.clearfix::after {
+  
+  content: "";
+  display: table;
+  
+}
+
+.clearfix::after {
+  
+  clear: both;
+  
+}
+
+.page_header {
+  
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  
+}
+
+.visually-hidden {
+  
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: none;
+  margin: -1px;
+  white-space: nowrap;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  
+}
+
+/*  /LAYOUT  */

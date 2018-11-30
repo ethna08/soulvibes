@@ -1,0 +1,117 @@
+.player {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 80px;
+    padding-left: 230px;
+    padding-right: 230px;
+    background-color: #b50b1e;
+    color: #ffffff;
+}
+
+.player__btn {
+    width: 38px;
+    height: 38px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+.player__btn:hover {
+    background-color: #ffffff;
+    
+}
+
+.btn__play {
+    width: 55px;
+    height: 55px;
+    background-image: url(../img/player/play.png);
+    background-repeat: no-repeat;
+    background-position: 60% center;
+}
+
+.btn__play:hover {
+    background-image: url(../img/player/play-hover.png);
+}
+
+.player__track {
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.player__slide {
+    width: 100%;
+}
+
+
+.player__slider {
+    width: 100%;
+    height: 8px;
+    border-radius: 6px;
+    
+}
+
+.player__title {
+    margin: 0;
+    margin-right: auto;
+}
+
+.player__time {
+    margin: 0;
+}
+.btn__volume {
+    background-image: url(../Img/player/volume.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn__volume:hover {
+    background-image: url(../Img/player/volume-hover.png);
+}
+
+.btn__prev {
+    background-image: url(../img/player/prev.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn__prev:hover {
+    background-image: url(../img/player/prev-hover.png);
+}
+
+.btn__next {
+    background-image: url(../Img/player/next.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn__next:hover {
+    background-image: url(../img/player/next-hover.png);
+}
+
+.btn__repeat {
+    background-image: url(../Img/player/repeat.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn__repeat:hover {
+    background-image: url(../img/player/repeat-hover.png);
+}
+
+.btn__playlist {
+    background-image: url(../img/player/playlist.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn__playlist:hover {
+    background-image: url(../Img/player/playlist-hover.png);
+}
+

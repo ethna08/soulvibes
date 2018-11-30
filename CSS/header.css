@@ -1,0 +1,150 @@
+/*  HEADER  */
+
+
+.page_header,
+.brand,
+.brand_link,
+.navigation_wrapper,
+.navigation {
+  
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+
+.page_header {
+  
+
+  display: flex;
+  padding-left: 230px;
+  padding-right: 230px;
+  padding-top: 30px;
+   height: 550px;
+  background-color: transparent;
+  background-image: url("../img/background-red.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  
+}
+
+/*  /HEADER  */
+
+/*  BRAND  */
+
+.brand {
+  
+  float: left;
+  width: 180px;
+  margin-left: 20px;
+  margin-top: 0;
+       
+ }
+
+.brand_link {
+  
+  display: block;
+  text-decoration: none;
+  color: white;
+  line-height: 0;
+   
+  }
+
+.brand_name {
+ font-family: Lora, arial;
+ font-size: 36px; 
+ color: white;
+    
+}
+/*  /BRAND  */
+
+/*  NAVIGATION  */
+
+.navigation_wrapper {
+  
+  float: right;
+  display: block;
+  width: 670px;
+  margin: 0 15px;
+  
+}
+
+.navigation {
+  
+  list-style: none;
+  text-align: right;
+  
+}
+
+.navigation_item {
+  
+  list-style: none;
+  
+}
+
+.navigation_link {
+  
+  text-decoration: none;
+  color: inherit;
+  
+}
+
+.navigation-main {
+  
+  font-size: 0;
+  line-height: 0;
+  vertical-align: top;
+  
+}
+
+.navigation-main .navigation_item {
+  
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+   font-size: 14px;
+  line-height: 55px;
+  text-transform: capitalize;
+  
+}
+
+.navigation-main .navigation_item:last-child {
+  
+  margin-right: 0;
+  
+}
+
+.navigation-main .navigation_link {
+  
+  font-size: inherit;
+  line-height: inherit;
+  color: #ffffff;
+  
+}
+
+.navigation-main .navigation__link--current, 
+.navigation-main .navigation_link:hover {
+  
+  color: #c7b299;
+  
+}
+
+/*  /NAVIGATION  */
+/*  /TITLE  */
+
+.page_title {
+   
+    display: inline-block; 
+    color:white;
+    font-size: 72px;
+    line-height: 86px;
+    margin-left: 20px;
+    font-family: Lora, serif;
+    font-weight: 700;
+    margin-top: 90px;
+    margin-right: 370px;
+    text-shadow: 0 11px 5px rgba(0, 0, 0, 0.5);
+}
