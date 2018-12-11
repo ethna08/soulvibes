@@ -1,0 +1,64 @@
+footer {
+    display: flex;
+    padding: 40px 230px 30px 230px;
+    align-items: center;
+}
+
+
+.footer-socials {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+}
+
+.footer-socials a {
+    display: block;
+    width: 23px;    
+    height: 28px;
+    margin-left: 55px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.socials-facebook {
+    background-image: url(../Img/footer/facebook.png);
+}
+
+.socials-facebook:hover {
+    background-image: url(../Img/footer/facebookhover.png);
+}
+
+.socials-twitter {
+    background-image: url(../Img/footer/twitter.png);
+}
+
+.socials-twitter:hover {
+    background-image: url(../Img/footer/twitterhover.png);
+}
+
+.socials-instagram {
+    background-image: url(../Img/footer/instagram.png);
+}
+
+.socials-instagram:hover {
+    background-image: url(../Img/footer/instagramhover.png);
+}
+
+.socials-pinterest {
+    background-image: url(../Img/footer/pinterest.png);
+}
+
+.socials-pinterest:hover {
+    background-image: url(../Img/footer/pinteresthover.png);
+}
+
+.socials-youtube {
+    background-image: url(../Img/footer/youtube.png);
+}
+
+.socials-youtube:hover {
+    background-image: url(../Img/footer/youtubehover.png);
+}

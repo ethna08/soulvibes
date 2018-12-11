@@ -6,11 +6,15 @@
    <link href="https://fonts.googleapis.com/css?family=Lora:700&amp;subset=cyrillic" rel="stylesheet">
 <link href="http://allfont.ru/allfont.css?fonts=caviar-dreams-bold" rel="stylesheet" type="text/css" />
     <link src="Fonts/Caviar_Dreams_Bold.ttf" rel="stylesheet" type="text/css" />
-   <link rel="stylesheet" href="css/n">
+<!--    <link rel="stylesheet" href="css/normalize.css">-->
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/player.css">
     <link rel="stylesheet" href="css/Genres.css">
+    <link rel="stylesheet" href="CSS/events.css">
+    <link rel="stylesheet" href="CSS/news.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/footer.css">
 </head>
 <body>
   <!-- PAGE HEADER -->
@@ -18,11 +22,11 @@
     <div class="container clearfix">
     <!-- BRAND LOGO -->
       <div class="brand">
-        <a class="brand_link" href="index.html">
-          <h2 class="brand_name">soulvibes</h2>   
+        <a class="brand_link">
+         <img class="brand_logo" src="Img/Brand.png" width="200" height="30" alt="Soulvibes">
         </a>
       </div>
-      <!-- /BRAND LOGO -->
+        <!-- /BRAND LOGO -->
       <!-- MAIN NAVIGATION -->
       <nav class="navigation_wrapper">
         <ul class="navigation navigation-main">
@@ -50,7 +54,7 @@
 	  3:20
 	</p>
 	<div class="player__slide">
-	  <input class="player__slider" type="range">
+	  <input class="player__slider" type="range" min="0" max="100">
 	</div>
       </div>
       <button class="player__btn btn__volume"></button>
@@ -67,7 +71,7 @@
     <!--  Genres_Station    -->
       <section class="Genres">
       <div class="container">
-        <h2 class="Genres-title">Genres Station</h2>
+        <h2 class="section-title">Genres Station</h2>
           
          <ul class="Genres-station__list">
           <li><a class="Genres_station Genres__top" href="#">Trending Top</a></li>
@@ -79,12 +83,141 @@
           <li><a class="Genres_station Genres__jazz" href="#">Jazz</a></li>
           <li><a class="Genres_station Genres__reggae" href="#">Reggae</a></li>
         </ul>
-        <button class="Genres__btn button" type="submit">Load more</button>
+          
+         <button class="Genres__btn button" type="submit">Load more</button>
         
       </div>
     </section>
-    <!-- /Latest Project -->
-     
+    <!-- /Genres_Station -->
+      
+        <!-- events-->
+        <section class="events">
+        <div class="container">
+       <h2 class="section-title">Upcoming Events</h2>
+        <div class="events__schedule">
+	  <div class="events__event" id="events__lp">
+	    <div class="events__time">
+	      Wednesday  / 22 Dec 2017 /  12:00 PM
+	    </div>
+	    <div class="events__band">
+	      Linkin Park
+	    </div>
+            <div class="event__place">
+	      Ziggo Dome
+	    </div>
+            <div class="event__address">
+	      De Passage 100, Amsterdam, Netherlands
+	    </div>
+		</div>
+          <div class="events__event"  id="events__bk">
+            <div class="events__time">
+	      Wednesday  / 22 Dec 2017 /  12:00 PM
+	    </div>
+	    <div class="events__band">
+	      Burger kill
+	    </div>
+	    <div class="event__place">
+	      Ziggo Dome
+	    </div>
+	    <div class="event__address">
+	      De Passage 100, Amsterdam, Netherlands
+	    </div>
+	  </div>
+        <img class="event-img" src="Img/eventsartist.png" alt="Man playing banjo"/>
+	    </div>
+    </div>
+    </section>
+         <!-- /events-->
+               
+        <!-- news-->
+              <section class="news">
+        <h2 class="section-title">Latest News</h2>
+        <div class="news__wrap">
+          <div class="news__card">
+            <div class="news__date">
+	      21 MARCH 2017
+	    </div>
+            <h3 class="news__head">
+	      Donec ac pellentesque justo, quis rutrum tortor
+	    </h3>
+            <p class="news__text">
+	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat eget eros eget bibendum. Suspendisse finibus ultricies dapibus. Nam sed imperdiet diam
+	    </p>
+            <button class="news__button button">
+	      Read more
+	    </button>
+	  </div>
+	  <div class="news__card">
+	    <div class="news__date">
+	      21 MARCH 2017
+	    </div>
+	    <h3 class="news__head">
+	      Donec ac pellentesque justo, quis rutrum tortor
+	    </h3>
+	    <p class="news__text">
+	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat eget eros eget bibendum. Suspendisse finibus ultricies dapibus. Nam sed imperdiet diam
+	    </p>
+	    <button class="news__button button">
+	      Read more
+	    </button>
+	  </div>
+	  <div class="news__card">
+	    <div class="news__date">
+	      21 MARCH 2017
+	    </div>
+	    <h3 class="news__head">
+	      Donec ac pellentesque justo, quis rutrum tortor
+	    </h3>
+	    <p class="news__text">
+	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat eget eros eget bibendum. Suspendisse finibus ultricies dapibus. Nam sed imperdiet diam
+	    </p>
+	    <button class="news__button button">
+	      Read more
+	    </button>
+	  </div>
+	</div>
+      </section>
+   <!-- /news-->
+     <!-- contact-->   
+       <section class="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact__wrap">
+          <p class="contact__big">
+	    Join Our Community
+	  </p>
+          <p class="contact__text">
+	    Be among the first to hear about our new tracks, events, news<br>and so much more!
+	  </p>
+          <form class="contact__email" action="">
+            <label class="invisible" for="email">Leave your email</label>
+            <input id="email" type="text" name="leave-email" placeholder="Your email address">
+            <button class="contact__button button" type="submit" value="Subscribe">Subscribes</button>
+	  </form>
+	</div>
+      </section>
+     <!-- /contact-->    
   </main>
-</body>
+    <footer>
+      <p class="footer-text">
+	Copyright © 2017 soulvibes.  All rights reserved
+      </p>
+      <ul class="footer-socials">
+        <li>
+          <a class="socials-facebook" href="#"></a>
+	</li>
+        <li>
+          <a class="socials-twitter" href=""></a>
+	</li>
+        <li>
+          <a class="socials-instagram" href=""></a>
+	</li>
+        <li>
+          <a class="socials-pinterest" href=""></a>
+	</li>
+        <li>
+          <a class="socials-youtube" href=""></a>
+	</li>
+      </ul>
+    </footer> 
+    </body>
 </html>

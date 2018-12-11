@@ -1,0 +1,69 @@
+
+
+.events {
+    position: relative;
+}
+
+.event-img {
+    position: absolute;
+    bottom: 30px;
+    right: -20px;
+    width: 523px;
+    height: 577px;
+}
+
+.events__schedule {
+    margin-left: -230px;
+    margin-right: -230px;
+    padding-left: 230px;
+    padding-right: 230px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    color: #fff;
+    background-image: url(../Img/eventsback.png);
+    background-repeat: no-repeat;
+}
+
+.events__band {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: bold;
+}
+
+.events__event {
+    position: relative;
+    margin-bottom: 70px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.events__event::before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: -35px;
+    width: 2px;
+    height: 160%;
+    background-color: #fff;
+}
+
+.events__event::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -45px;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+

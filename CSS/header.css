@@ -4,6 +4,7 @@
 .page_header,
 .brand,
 .brand_link,
+.brand_logo,
 .navigation_wrapper,
 .navigation {
   
@@ -39,8 +40,7 @@
   width: 180px;
   margin-left: 20px;
   margin-top: 0;
-       
- }
+   }
 
 .brand_link {
   
@@ -48,15 +48,22 @@
   text-decoration: none;
   color: white;
   line-height: 0;
-   
   }
 
-.brand_name {
- font-family: Lora, arial;
- font-size: 36px; 
- color: white;
+.brand_logo {
+display: inline-block;
+width: 200px;
+border: none;
+outline: none;
     
 }
+
+/*
+.logo {
+    order: -1;
+    margin-right: auto;
+}
+*/
 /*  /BRAND  */
 
 /*  NAVIGATION  */

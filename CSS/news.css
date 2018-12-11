@@ -1,0 +1,60 @@
+.news {
+    padding-bottom: 190px;
+}
+
+.news__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__card {
+    width: 255px;
+    padding: 20px 20px 30px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+.news__card:hover {
+    color: white;
+    background-image: url(../Img/footer/music.png);
+     background-position: center;
+/*    transition-duration: 0.5s;*/
+    transition-timing-function: ease;
+}
+.news__date {
+    position: relative;
+    margin-left: 15px;
+    font-size: 11px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.news__date::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -15px;
+    width: 8px;
+    height: 8px;
+    background-color: #dddddd;
+}
+
+.news__head {
+    font-size: 20px;
+}
+
+.news__text{
+   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;  
+  font-size: 14px;  
+}
+.news__button {
+    padding: 10px;
+    font-size: 12px;
+    color: #b50b1e;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+}
+.news__button:hover {
+    color: #ffffff;
+    background-color: #c12127;
+}

@@ -7,7 +7,7 @@ main {
     padding-top: 60px;
     padding-bottom: 90px;
 }
-.Genres-title {
+.section-title {
     position: relative;
     margin: 0;
     margin-bottom: 60px;
@@ -15,20 +15,20 @@ main {
     font-weight: 700;
 }
 
-.Genres-title::before {
+.section-title::before {
     content: "";
     position: absolute;
-    top: 22px;
+    top: 12px;
     left: -230px;
     width: 210px;
     height: 2px;
     background-color: #dddddd;
 }
 
-.Genres-title::after {
+.section-title::after {
     content: "";
     position: absolute;
-    top: 17px;
+    top: 7px;
     left: -32px;
     width: 12px;
     height: 12px;
@@ -65,7 +65,8 @@ main {
 .Genres_station:hover {
     color: #b50b1e; 
     background-color: #e1e1e1;
-    
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
    }
 
 .Genres-station__list li {
