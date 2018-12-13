@@ -3,29 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Home Project</title>
-   <link href="https://fonts.googleapis.com/css?family=Lora:700&amp;subset=cyrillic" rel="stylesheet">
+  <script src="js/animatetext.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lora:700&amp;subset=cyrillic" rel="stylesheet">
 <link href="http://allfont.ru/allfont.css?fonts=caviar-dreams-bold" rel="stylesheet" type="text/css" />
     <link src="Fonts/Caviar_Dreams_Bold.ttf" rel="stylesheet" type="text/css" />
 <!--    <link rel="stylesheet" href="css/normalize.css">-->
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/player.css">
-    <link rel="stylesheet" href="css/Genres.css">
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/player.css">
+    <link rel="stylesheet" href="CSS/Genres.css">
     <link rel="stylesheet" href="CSS/events.css">
     <link rel="stylesheet" href="CSS/news.css">
     <link rel="stylesheet" href="CSS/contact.css">
     <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/toupbutton.css">
+   
 </head>
 <body>
+    <div class="img"></div>
+       <div class="video-bgd">
+          <video id="video-bg" poster="poster" loop="loop" preload="auto" source src="media/sample.mp4" type="video/mp4"></video>
+      </div>
   <!-- PAGE HEADER -->
     <header class="page_header">
     <div class="container clearfix">
     <!-- BRAND LOGO -->
       <div class="brand">
-        <a class="brand_link">
+        <a class="brand_link" href="#">
          <img class="brand_logo" src="Img/Brand.png" width="200" height="30" alt="Soulvibes">
         </a>
-      </div>
+              </div>
         <!-- /BRAND LOGO -->
       <!-- MAIN NAVIGATION -->
       <nav class="navigation_wrapper">
@@ -38,37 +45,43 @@
         </ul>
       </nav>
       <!-- /MAIN NAVIGATION -->
-        <!--TITLE-->
-        <h1 class="page_title">High Quality<br> Internet Music<br> Stations</h1>
-      </div>
+     </div>
     </header>
   <!-- /PAGE HEADER -->
-  <!--AUDIO PLAYER-->
- <div class="player">
-      <button class="player__btn btn__play"></button>
-      <div class="player__track">
-	<p class="player__title">
-	  The Diary of Jane - Breaking Benjamin
-	</p>
-	<p class="player__time">
-	  3:20
-	</p>
-	<div class="player__slide">
-	  <input class="player__slider" type="range" min="0" max="100">
-	</div>
-      </div>
-      <button class="player__btn btn__volume"></button>
-      <button class="player__btn btn__prev"></button>
-      <button class="player__btn btn__next"></button>
-      <button class="player__btn btn__repeat"></button>
-      <button class="player__btn btn__playlist"></button>
-    </div>
-<!--   /AUDIO PLAYER-->
-   
-    <!-- PAGE MAIN -->
+
+  <!-- PAGE MAIN -->
     <main class="page-main">
-         
-    <!--  Genres_Station    -->
+        <!--TITLE-->
+         <section class="title">
+             <h1 class="page_title">High Quality<br> Internet Music<br> Stations</h1>
+        
+        </section>
+  <!--AUDIO PLAYER-->
+  <div class="player">
+      
+      <div class="playerblock">
+          <button class="player__btn btn__play" onclick="play()"></button>
+          <div class="player__track">
+              <p class="player__title">
+                  The Diary of Jane - Breaking Benjamin
+              </p>
+              <p class="player__time">
+                  3:20
+              </p>
+              <div class="player__slide">
+                  <input class="player__slider" type="range" min="0" max="100" value="85">
+              </div>
+          </div>
+          <button class="player__btn btn__volume"></button>
+          <button class="player__btn btn__prev"></button>
+          <button class="player__btn btn__next"></button>
+          <button class="player__btn btn__repeat" onclick="stop()"></button>
+          <button class="player__btn btn__playlist"></button>
+      </div>
+  </div>
+<!--   /AUDIO PLAYER-->
+    
+   <!--  Genres_Station    -->
       <section class="Genres">
       <div class="container">
         <h2 class="section-title">Genres Station</h2>
@@ -218,6 +231,19 @@
           <a class="socials-youtube" href=""></a>
 	</li>
       </ul>
-    </footer> 
+    </footer>
+   
+
+    <a id="toup__button" title="Back to UP" href="#"><span class="visually-hidden">Back to UP</span></a>
+<!--    JAVASCRIPTS-->
+    <script src="Js/jquery-3.3.1.js"></script>
+    <script src="Js/toupbutton.js"></script>
+    <script src="Js/vPlayerController.js"></script>
+    <script>
+    var ToUpBtn = new ToUpButton("toup__button");
+    ToUpBtn.run();
+  </script>
+  
+    
     </body>
 </html>

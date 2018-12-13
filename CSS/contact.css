@@ -1,5 +1,8 @@
 
-
+.contact {
+    padding-left: 230px;
+    padding-right: 230px;
+}
 
 .contact__wrap {
     margin-right: -230px;
@@ -9,7 +12,7 @@
     padding-bottom: 60px;
     color: #ffffff;
     background-color: #30333c;
-    background-image: url(../img/contactback.png);
+    background-image: url(../Img/contactback.png);
     background-repeat: no-repeat;
 
 

@@ -2,6 +2,8 @@
 
 .events {
     position: relative;
+     padding-left: 230px;
+    padding-right: 230px;
 }
 
 .event-img {

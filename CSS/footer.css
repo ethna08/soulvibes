@@ -4,6 +4,15 @@ footer {
     align-items: center;
 }
 
+.scroll {
+    position: fixed; 
+    right: 50px; 
+    bottom: 20px; 
+    box-shadow: rgba(2,0,0,5.5) 0px 1px 3px;
+    width: 53px;
+    height: 53px;
+    
+}
 
 .footer-socials {
     display: flex;
